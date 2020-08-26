@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css"> 
+    <style>
+
+      /*TABLES*/
+      
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+      #t01 {
+        width: 100%;    
+        background-color:  lightpink;
+      }
+
+      #t02 {
+        width: 100%;    
+        background-color:  gainsboro;
+      }
+
+      /*FONTS*/
+      .serif {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .sansserif {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .monospace {
+        font-family: "Lucida Console", Courier, monospace;
+      }
+      
+
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+      }
+
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #ccc;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+
+
+      * {box-sizing: border-box}
+      .mySlides1, .mySlides2 {display: none}
+      img {vertical-align: middle;}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a grey background color */
+      .prev:hover, .next:hover {
+        background-color: #f1f1f1;
+        color: black;
+      }
+
+      
+
+    </style>
+  </head>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+    <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+    <button class="tablinks" onclick="openTab(event, 'Hobbies')">Hobbies</button>
+    <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+    <button class="tablinks" onclick="openTab(event, 'Courses')">Courses</button>
+    <button class="tablinks" onclick="openTab(event, 'Register')">Register</button>
+  </div>
+
+  <div id="Home" class="tabcontent">
+    <div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2 style="font-family:verdana"><b><i>Aarushi Sriram Aiyyar</i></b></h2>
+      
+      <img src="aarushi2.jpeg" alt="Trulli" width="200" height="200"> 
+      <p style="font-family:verdana">I'm <b><i>Aarushi</i></b>, a <huge>Computer Science</huge> graduate about to embark upon my new journey at <big style="color:#BA4A00;">IIT Bombay </big>as a Graduate student, hoping to make some worthwhile contributions to the field of CS. I worked intensively on core CS concepts, my problem solving abilities, time management and stress management while preparing for GATE CS. I'm fond of healthy discussions of problems and concepts that are mentally stimulating.</p>
+      <br>
+      
+      <video width="320" height="240" controls>
+         <source src="video.mp4" type="video/mp4">
+      </video>
+ 
+      
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <div class="slideshow-container">
+        <div class="mySlides1">
+        <img src="aarushi1.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <img src="aarushi2.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides1">
+        <img src="aarushi3.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides1">
+        <img src="aarushi.jpeg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+     </div> 
+    </div>
+  </div>
+  <footer class="container-fluid text-center" style="color:#78281F;">
+  <h3 style="font-family:Courier New'"><strong>Contact me</strong></h3>
+      <a href="https://www.facebook.com/aarushi.aiyyar/" target="_blank" class="btn btn-success">Facebook</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/in/aarushi-aiyyar-5547a4104/" target="_blank" class="btn btn-primary">LinkedIn</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.instagram.com/aarushi.aiyyar/" target="_blank" class="btn btn-warning">Instagram</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/aaru0110" target="_blank" class="btn btn-danger">Git</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://medium.com/@aiyyar.aarushi" target="_blank" class="btn btn-info">Medium</a>
+  </footer>
+</div>
+
+
+
+
+  <div id="Projects" class="tabcontent" style="font-family:'verdana'">
+    <div class="col-sm-12">
+    <p style="color:#0E6251;"><strong>Projects</strong></p>
+                       
+    <div style="font-family:'verdana'">
+      <ul>
+        <li style="color:#0E6251;">Aspect Based Opinion Mining</li>
+        <li style="color:#0E6251;">Website for automated appointment booking for patients</li>
+        <li style="color:#0E6251;">Heterogenous Databases used for Distributed query insertion, deletion, retrieval and updation of data</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+
+  <div id="Hobbies" class="tabcontent">
+    <div class="col-sm-12">
+  <p style="font-family:'verdana'"><strong style="color:#34495E;">Hobbies</strong></p>
+    <script type="text/javascript">
+      function Hobby_Def() {
+          var  Dancing= document.getElementById("Dancing");
+          Dance.style.display = Dancing.checked ? "block" : "none";
+          var  Music= document.getElementById("Music");
+          Songs.style.display = Music.checked ? "block" : "none";
+          
+      }
+    </script>
+
+
+    <label for="Dancing" class="sans" style="color:#34495E;">
+      <input type="radio" id="Dancing" name="Hobbies" onclick="Hobby_Def()" />
+        Dancing
+    </label>
+
+    <br>
+
+    <label for="Music" class="sans" style="color:#34495E;">
+      <input type="radio" id="Music" name="Hobbies" onclick="Hobby_Def()" />
+        Music
+    </label>
+
+    <div id="Dance" style="display: none">
+
+      <h3 class="sans"> <b><i>DANCING</i></b> </h3>
+      <p class ="sans"> I have been dancing since I was 9 years old. I am a trained Bharatnatyam dancer. But I'm also fond of other dance forms like Bollywood, Hip hop and Belly dancing, at which I'm a novice.</p>
+      <p class ="sans"> Here's a slideshow of a few of my dance photographs in chronological order. I hope you enjoy them! :) </p>
+      
+      <div class="slideshow-container">
+        <div class="mySlides2">
+          <img src="dance1.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="dance2.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="dance3.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="dance4.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="dance5.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+
+    </div>
+    <div id="Songs" style="display: none">
+      <h3 class ="sans"> <b><i>MUSIC </i></b></h3>
+      <p class ="sans">I am very fond of letting the tunes consume me. Music has always been the medium of expression that I've connected the most to. When I listen to music, I feel like I've transported to a different abstract world, away from all the hustle. </p>
+   
+      <div class='dir-list'><p class = "sans">Here's 2 of my favorite bands/artists:</p>
+        <ul>
+          <li class ="sans"><b><i>Tool</b></i></li>
+            <div class="container" style="margin-top:30px">
+              <div class="row">
+                <div class="col-sm-6">
+             
+
+                  <img src="tool.jpg" alt="Trulli" width="400" height="200">    
+                </div>
+
+                <div class="col-sm-6">
+                  <img src="music1.jpeg" alt="Trulli" width="400" height="400"><br>
+                </div>
+              </div>
+            </div>
+                            
+            <p class ="sans">Here's a fun fact : Tool composed a song called Lateralus in 2000. The syllables Maynard (vocalist) sings in the first verse follow the first six numbers in the pattern, ascending and descending in the sequence 1-1-2-3-5-8-5-3. Furthermore, the song is known for its distinct time signatures and corresponding lyrical patterns. The time signatures of the chorus of the song change from 9/8 to 8/8 to 7/8. It was originally titled 9-8-7. For the time signatures. Then it turned out that 987 was the 16th number of the Fibonacci sequence. So, I think that's cool. </p>
+
+
+          <li class ="sans"><b><i>Poets of the fall</b></i></li>
+
+            <div class="container" style="margin-top:30px">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="potf.jpg" alt="Trulli" width="400" height="300"> 
+
+              </div>
+              <div class="col-sm-6">  
+                <img src="Music4.jpeg" alt="Trulli" width="500" height="400"> 
+              </div>
+            </div>
+          </div>
+            <p class ="sans">Whenever I wish to experience child-like bliss, this is my go-to band! I think Marko (lead vocals) not only has an amazing voice, but also has exceptional lyrical capabilities. </p>
+                            
+        </ul>
+      </div>
+     
+      <p class ="sans">Here's 2D map of music genres for you to check out. <a href="http://everynoise.com/engenremap.html" target="_blank">A 2D map of music genres</a></p>
+
+    </div>
+</div>
+  </div>
+
+  <div id="Education" class="tabcontent" style="color:#78281F;">
+    <div class="col-sm-12">
+    <h3>Education</h3>
+
+    <table style="color:#78281F;">
+      <tr>
+        <th>Class</th>
+        <th>Year</th>
+        <th>Institute</th>
+        <th>Percentage</th>
+        <th>CGPA</th>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>2012</td>
+        <td>S.B.O.A Public School</td>
+        <td>93.45</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>2014</td>
+        <td>Swami Vivekanand Junior College</td>
+        <td>84.31</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>B.E</td>
+        <td>2018</td>
+        <td>S.I.E.S Graduate School of Technology</td>
+        <td>72.68</td>
+        <td>8.2</td>
+      </tr>
+      
+    </table>
+
+    <br><br><br><br>
+    <h3 style="color:#626567;">Bachelor of Engineering</h3>
+
+    <table id ="t01" style="color:#626567;">
+      <tr>
+        <th>Semester</th>
+        <th>Year</th>
+        <th>CGPA</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>July 2014</td>
+        <td>7.98</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>January 2015</td>
+        <td>7.07</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>July 2015</td>
+        <td>7.11</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>January 2016</td>
+        <td>8.82</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>July 2016</td>
+        <td>8.33</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>January 2017</td>
+        <td>9.17</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>July 2017</td>
+        <td>8.40</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>January 2018</td>
+        <td>8.74</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+  <div id="Courses" class="tabcontent">
+    <h3 style="color:#AF7AC5;" ><strong>Courses</strong></h3>
+    <div class="row">
+                <div class="col-sm-12">
+    <table id = "t02" style="color:#AF7AC5;">
+      <thead>
+        <tr>
+          <th>Course number</th>
+          <th>Name of course</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://www.cse.iitb.ac.in/page134?course=CS+699" target="_blank">CS 699</a></td>
+          <td>Software Lab</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.cse.iitb.ac.in/~soumen/teach/cs635s2008" target="_blank">CS 635</a></td>
+          <td>Information Retrieval & Mining for Hypertext & the Web</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.cse.iitb.ac.in/~sunita/cs725/index.html" target="_blank">CS 725</a></td>
+          <td>Foundations of Machine Learning</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.cse.iitb.ac.in/~mythili/teaching/cs744_autumn2018/index.html" target="_blank">CS 744</a></td>
+          <td>Design and Engineering of Computing Systems</td>
+        </tr>
+                          
+      </tbody>
+    </table>
+  </div></div>
+</div>
+
+  <div id="Register" class="tabcontent">
+    <div class="row">
+                <div class="col-sm-12">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1MvSDXZiCyCtOn-dIX1mmTYrR-lYb1s5wVGvILpYGCsjOUA/viewform?embedded=true" width="1000" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+</div></div>
+
+
+
+  <script>
+
+    var slideIndex = [1,1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+
+    document.getElementsByClassName("tablinks")[0].click()
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
